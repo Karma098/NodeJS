@@ -29,7 +29,7 @@ app.use('/menu',menuRoutes);
 
 
 const personRoutes=require('./routes/personRoutes');
-app.use('/person',localAuthMiddleware,personRoutes);
+app.use('/person',personRoutes);
 
 app.listen(PORT,()=>{
   console.log('listening on port 3000');
